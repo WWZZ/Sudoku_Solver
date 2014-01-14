@@ -53,11 +53,21 @@ int main()
 	{0, 0, 7, 0, 0, 0, 3, 0, 0}
 	};
 
-	sudoku su1(hard);
+	sudoku su1(grid1);
 	cout << su1.solve_sudoku() << endl;
 	su1.print_grid();
+	
+	sudoku su2(subg);
+	cout << su2.solve_sudoku() << endl;
+	su2.print_grid();
 
-
+	sudoku su3(easy);
+	cout << su3.solve_sudoku() << endl;
+	su3.print_grid();
+	
+	sudoku su4(hard);
+	cout << su4.solve_sudoku() << endl;
+	su4.print_grid();
 
 	cin.get();
 	return 0;
